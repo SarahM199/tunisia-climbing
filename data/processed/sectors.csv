@@ -1,0 +1,29 @@
+id,crag_id,name,latitude,longitude,orientation,num_routes,grade_min,grade_max,approach_time_min,approach_difficulty,description,climbing_type
+1,1,Lanyeb (Site école),36.6157,10.3354,N/NE,7,3,6a,5,easy,"L'accès facile au sommet et aux encrages favorise la pose de moulinettes.",top_rope
+2,1,Région des Blocs,36.6187,10.3410,,,,,,,"Encore un bon potentiel au niveau du brossage et de l'ouverture.",bouldering
+3,1,Kef Lasmer,36.6185,10.3433,N/NE,18,5b,6c+,,,"Le secteur Kef Lasmer regroupe 18 voies réparties en trois groupes. Les deux parties de droites orientées nord sont à l'ombre quasiment toute la journée.",sport
+4,1,Damous Rabta,36.6180,10.3445,N/NE,14,5b,7a+,,,"Le secteur Damous Rabta 300 mètres plus loin. Il est à l'ombre l'après midi (orienté au nord nord-est).",sport
+5,2,Temple des Eaux,36.3823,10.1142,N/NW,8,3c,7a,10,easy,"Petite falaise école. Calcaire gris de l'Hauterivien. Secteur équipé par Alexis Cacciardi en mai 2012.",sport
+6,2,Oued Delia (Grande Voie),36.3823,10.1142,,1,6a,6b+,,,"Grande voie Jusqu'Allah tout va bien. 130m 4 longueurs.",multi_pitch
+7,2,Sous le regard de Fatma,36.3823,10.1142,W,6,,6c,20,moderate,"Secteur d'initiation sur moulinettes. Une seule voie équipée pour la grimpe en tête.",top_rope
+8,2,Aich el Nisr,36.3823,10.1142,S/SE,6,4a,6a,20,moderate,"Le nid d'aigle. Secteur où l'ombre se fait rare tôt dans la journée.",sport
+9,2,Slim Fast,36.3823,10.1142,N/NE,8,6a+,7a+,15,moderate,"Escalade sportive sur du beau rocher sculpté. A l'ombre une grande partie de la journée toute l'année.",sport
+10,2,Rock is Dead,36.3823,10.1142,NE,7,5b,6b,15,moderate,"Secteur à l'ombre l'après-midi et le soir. Difficulté modérée bon secteur d'initiation.",sport
+11,2,La Conque,36.3823,10.1142,,6,7a+,8c,20,moderate,"Voies pour grimpeurs très expérimentés. Rééquipées par la team Petzl en mars 2015.",sport
+12,2,Kàf al Blida (Voies alpines),36.3664,10.0903,NW,3,4,5c+,20,moderate,"Voies qui se rapprochent de l'escalade alpine. Ouvertes par Michael Pfau Jan Bakker et Mourad Attia.",alpine
+13,2,Kàf al Blida,36.3664,10.0903,NW,3,6a/b,6b/c,20,moderate,"Secteur dans la partie droite de la grande barre. Très exposé au soleil en fin de journée. Voies longues et bien équipées.",sport
+14,2,Beraka Allah Fika,36.3664,10.0903,NW,6,7a+,8c+,20,moderate,"Paroi de grande envergure très esthétique. Immense bombé parsemé de concrétions. Orientée NW passe au soleil à 13h30.",sport
+15,2,Kàf al Blida (Grandes voies),36.3664,10.0903,NW,3,4c,6c,20,moderate,"Grandes voies partiellement équipées. Coinceurs et friends nécessaires.",multi_pitch
+16,2,Secteur des Bergers,36.3573,10.1285,SE,9,5b,6c,20,moderate,"Secteur exposé au soleil jusqu'à 14h30. Voies de niveaux variés tout en restant abordables.",sport
+17,2,Grotte Petzl,36.3573,10.1285,SE,5,6a,8b+,20,moderate,"Voies du niveau des équipeurs (Petzl team). Grotte aux nombreux trous et belles concrétions.",sport
+18,2,Laloucha,36.3573,10.1285,SE,2,5b,6a,20,moderate,"Deux grandes voies esthétiques et bien équipées dans le 5sup/6a. Un must!",multi_pitch
+19,2,Grotte du Devers à la Menthe,,,,3,6c,8a+,,,"Premier secteur investi par l'équipe de marseillais (avril 2015).",sport
+20,2,Secteur des Marseillais,,,SE,11,5b+,8a,,,"Face de grande hauteur. Voies approchant les 40 mètres. Goujons 12mm.",sport
+21,2,La Grande Face,,,SE,1,6a+,8a,,,"Grande dalle grise surmontée d'une grotte suspendue en ogive. Secteur majeur pour grandes voies.",multi_pitch
+22,2,Secteur du Canyon,,,,9,5c,7b,,,"Voies longues et variées sur du gris de rêve. A l'ombre toute la journée. Peut être très venté (effet venturi).",sport
+23,2,Secteur de l'Aiguille,36.3737,10.1428,SE,18,4,7b+,30,moderate,"Rocher rouge et fracturé. Nombreuses voies classiques 25 à 35m. Partie centrale idéale pour initiation.",sport
+24,2,Grotte de l'Aiguille,36.3737,10.1428,SE,2,7b+,8a,,,"En contrebas du secteur de l'Aiguille. Voies non répétées.",sport
+25,2,Aïn Haroun,,,,7,5c,7a,15,moderate,"Secteur équipé par des grimpeurs du Der Deutsche Alpenverein en mai 2013.",sport
+26,1,Face Sud,36.6069,10.3411,S,11,5a+,7a+,60,moderate,"Imposante face Sud. Projet Highway to Harr (oct 2023). Goujons 12mm relais chainés acier galvanisé. Passe à l'ombre vers 13h.",sport
+27,1,Face Nord-Est (Face Sud topo),36.6069,10.3411,NE,3,5a+,6c+,60,moderate,"Face Nord-Est. Passe à l'ombre au plus tard à 11h l'été.",multi_pitch
+28,1,Face Est (Face Sud topo),36.6069,10.3411,E,2,5c,6b+,60,moderate,"Face Est du secteur Face Sud.",multi_pitch

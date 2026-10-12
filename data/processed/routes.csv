@@ -1,0 +1,167 @@
+id,sector_id,route_number,name,grade,quickdraws,rope_length_m,climbing_type,description
+1,3,1,Avec ou sans Lafaille,6c,6,50,sport,
+2,3,2,A l'origine,5c,8,50,sport,
+3,3,3,A l'ancienne,6a,13,80,sport,
+4,3,4,Naissance,6b,13,70,sport,
+5,3,5,Cip e Ciop,6a+,10,60,sport,
+6,3,6,Des vers droite,6a,7,50,sport,
+7,3,7,La Controversée,6a,8,60,sport,
+8,3,8,Bac au fond du trou,6b+,15,70,sport,
+9,3,9,Sur un spit de 8,6c+,13,70,sport,
+10,3,10,Intro,5b,11,50,sport,
+11,3,11,La petite old school,5c+,10,50,sport,
+12,3,12,Jolie traversée,6b,13,70,sport,
+13,3,13,Choya mou,6b+,15,70,sport,
+14,3,14,Sensations variées,6b+,12,80,sport,
+15,3,15,Chames Alik,6b,13,70,sport,
+16,3,16,My favorite thing,5c+,11,70,sport,
+17,3,17,Climbin' Tunisia,5c,10,60,sport,
+18,3,18,La rampe,5b,10,60,sport,
+19,4,1,Engagez vous !,6a+,13,60,sport,
+20,4,2,[unnamed],5c+,8,40,sport,
+21,4,3,Le hasard du Lézard,6b,12,70,sport,
+22,4,4,Grand écart,6a,10,60,sport,
+23,4,5,Ya Marhaba,6c,12,60,sport,
+24,4,6,Il est où le repos il est où ?,6b+,11,60,sport,
+25,4,7,Khoufou,6b+/6c,8,50,sport,
+26,4,8,[unnamed],7a+/7b,15,80,sport,
+27,4,9,Rayahia,6a+,15,80,sport,
+28,4,10,La voie des traitres,6b,8,50,sport,
+29,4,11,Bideya Jadida,5b,6,40,sport,
+30,4,12,Ksair w Yhayir,6a+,6,40,sport,
+31,4,13,Climbing in the rain,6b+,5,40,sport,
+32,4,14,[unnamed],6a,7,40,sport,
+
+33,5,1,Les lignes rouges de la liberté,5c,3,8,sport,
+34,5,2,Chakchouka,4a,5,10,sport,
+35,5,3,Cosmos police,3c,4,7,sport,
+36,5,4,Épilation,6a,5,8,sport,
+37,5,5,Les gouerris,4c/5c,11,20,sport,
+38,5,6,Couscous bech wouled,3c,9,15,sport,
+39,5,7,Sceptique et tacle,7a,9,15,sport,
+40,5,8,Doute sous un palmier,6c,9,15,sport,
+41,6,1,Jusqu'Allah tout va bien,6b+,,130,multi_pitch,4 longueurs: L1 6a / L2 6b / L3 6b+ / L4 6a
+42,7,1,Voie ancienne,7?,,,,Sur spits de 10
+43,7,2,Pas d'âne,4,4,15,top_rope,éq. GUCEM. Moulinette
+44,7,3,Choukran,4,4,15,top_rope,éq. GUCEM. Moulinette
+45,7,4,Hypopot'anne,4,4,15,top_rope,éq. GUCEM. Moulinette
+46,7,5,Cou-Anne,4,4,15,top_rope,éq. GUCEM. Moulinette et accès aux moulinettes
+47,7,6,Dans les yeux de Fatma,5b/6c,,60,multi_pitch,Voie ancienne. 2 longueurs
+48,8,1,Tous les chemins mènent au Bled,5c,,,sport,éq. GUCEM
+49,8,2,Bienvenue au Bled,5c/6a,,,multi_pitch,éq. GUCEM. Deux longueurs. Un must!
+50,8,3,L'homme vertical,6a,,,sport,éq. GUCEM. Belle escalade assez raide
+51,8,4,Koul-koul,6a,,,sport,éq. GUCEM
+52,8,5,L'enfant du pays,5b,,,sport,éq. GUCEM
+53,8,6,Voir Zaghouan et Mourad,4a,,,sport,éq. GUCEM. Idéale pour une première
+54,9,1,Musèle Man,6b,,,sport,éq. GUCEM. Belle envolée
+55,9,2,Djebel et rebel,6a+,,,sport,éq. GUCEM
+56,9,3,Gucem le vent récolte la tempête,6b,,,sport,éq. GUCEM. Rocher superbe
+57,9,4,Cétré joli,6b+,,,sport,éq. P. Bence S. Maifret
+58,9,5,Slowfast,7a+,,,sport,éq. E. Valls. Dalle se redressant à partir du milieu
+59,9,6,Le Valls à mille temps,6c+,,,sport,éq. E. Valls. Soutenu à partir du 1er tiers
+60,9,7,Frigo Palace,6c+,,,sport,éq. E. Valls. Dévers doté d'excellents bacs
+61,9,8,Slim Fast,6c,,,sport,éq. GUCEM. Deux très bons repos
+62,10,1,Palme Yeah !,5c+,14,,sport,éq. GUCEM. Escalade variée
+63,10,2,Datte Yeah !,5b,,,sport,éq. GUCEM
+64,10,3,Laboratoire,5c,,,sport,éq. E. Valls
+65,10,4,Vis-je ? Yeah !,6a,,,sport,éq. GUCEM
+66,10,5,Olive Yeah !,5c+,,,sport,éq. GUCEM
+67,10,6,Kommse heut' nich kommse morgen,6b,,,sport,éq. GUCEM. Un seul pas à la fin
+68,10,7,Grave Yeah !,5b,,,sport,éq. GUCEM
+69,11,1,Shapeless papa,7a+,,,sport,reéq. Petzl team mars 15
+70,11,2,Candle in the wind,8c,,,sport,éq. Petzl team
+71,11,3,Klemen la danse,8b+,,,sport,éq. Petzl team
+72,11,4,Ame otoko,8a/8a+,,,sport,éq. Petzl team
+73,11,5,Labess,7c+/8a,,,sport,éq. Petzl team
+74,11,6,Ennousour,7b+/8a,,,multi_pitch,reéq. Petzl team. L1 7b+ L2 8a
+75,12,1,M&M's,5b,,25,alpine,éq. J. Bakker M. Pfau
+76,12,2,Gone with the wind,4/5,,110,alpine,éq. J. Bakker M. Pfau M. Attia. Partiellement équipé
+77,12,3,The Green Mile,5c+,,175,alpine,éq. J. Bakker M. Pfau. 5 longueurs
+78,13,1,Burkino Fractio,6a/b,14,35,sport,éq. GUCEM. Beau et long dièdre
+79,13,2,Chatou princesse du désert,6a/b,12,30,sport,éq. GUCEM. Ouverture du bas!
+80,13,3,Été cagnard,6b/c,10,30,sport,éq. GUCEM. La punition
+81,14,1,Ihri ihri,8a?,,,sport,éq. Petzl team. 40m
+82,14,2,Beraka Allah Fika,6c/7c/8a,,,multi_pitch,éq. Gucem. 3 longueurs
+83,14,3,Kif Kif Bang Bang,7a+/8c?,,,multi_pitch,éq. Petzl team. 2 longueurs
+84,14,4,L'art du chicha,8c,,,sport,éq. Petzl team. 40m
+85,14,5,Yatik Saha,8b+?,,,sport,éq. Petzl team. 40m
+86,14,6,Achthab,8c+?,,,sport,éq. Petzl team. 40m
+87,15,1,Ben Ali qu'a tort,6a+,,150,multi_pitch,ouv. C. Vigier. 5 longueurs L1 5b+ L2 6a L3 6a+ L4 6a L5 4c
+88,15,2,Révolution en rab,6b/c,,110,multi_pitch,ouv. C. Vigier. 4 longueurs L1 5a L2 5b L3 5c L4 6b/c
+89,15,3,Printemps Arabe,6c,,110,multi_pitch,éq. Y. Picart. 4 longueurs L1 5b L2 6c L3 6b+ L4 6c
+90,16,1,Kawa Canem,6a,6,13,sport,
+91,16,2,Le pain du chevrier,5b/6b+,7,13,sport,2 longueurs
+92,16,3,Serpent endormi non identifié (S.E.N.I),5a/6b+,11,17,sport,2 longueurs
+93,16,4,Les Marseillais à Zaghouan,6c,13,28,sport,
+94,16,5,Symbol tout terrain,6a/6b+/6b,18,31,sport,3 longueurs
+95,16,6,Sous les frigos la terre,5b+,5,10,sport,
+96,16,7,La bonne étoile du berger,6b+,14,32,sport,
+97,16,8,Chèvre show,6b+,14,32,sport,Départ commun avec voie 9
+98,16,9,Excédent bagages,5b+/6c,13,31,sport,2 longueurs
+99,17,1,Mrigel,6a,16,40,sport,éq. Petzl team
+100,17,2,Chorba bnina,8a,9,10,sport,éq. Petzl team
+101,17,3,Behi,8b+,9,10,sport,éq. Petzl team
+102,17,4,Né en Tunisie,7a+,9,10,sport,éq. Petzl team
+103,17,5,Le petit cuistot des grandes gorges,7a,9,15,sport,éq. J. Charrié
+104,18,1,Laloucha,6a/6a,20,50,multi_pitch,éq. G. Drouot. 2 longueurs
+105,18,2,Alaya la voie du berger,6a/5b/5c+,26,57,multi_pitch,éq. G. Drouot. 3 longueurs
+106,19,1,Nos noces berbères,6c,,,sport,éq. R. Gateau
+107,19,2,Dévers à la menthe,7b+,,,sport,éq. R. Magnan
+108,19,3,Bismillah.com,8a+?,,,sport,éq. J. Charrié. Non répétée
+109,20,1,La old school,5b+,17,45,sport,éq. V. Vilmer. Majeur dans le style classique!
+110,20,2,Faucon millenium,6b/7b+,,,multi_pitch,éq. R. Magnan. 2 longueurs
+111,20,3,Tonds ton mouton,6b,,,sport,éq. P. Barnéoud
+112,20,4,Mono thon,7a,,,sport,éq. P. Barnéoud
+113,20,5,La mouïette,7a,,,sport,éq. V. Vilmer
+114,20,6,Space baboune,6a+/6b,,,multi_pitch,Non équipée coinceurs indispensables. 2 longueurs
+115,20,7,Gecko friendly,7a,,40,sport,éq. P. Barnéoud
+116,20,8,L'empire des chèvres,7b+/8a?,,,multi_pitch,éq. F. Poncet. 2 longueurs
+117,20,9,Le djinn tonic du martinet,7a/7b+,,,multi_pitch,éq. F. Poncet. 2 longueurs
+118,20,10,Les crocs du serpent,7b/7c+,,,multi_pitch,éq. J. Charrié. 2 longueurs
+119,20,11,La trompe de l'éléphant,7c,,,sport,éq. J. Charrié. Majeur!
+120,21,1,Etouffe Crétins,7c+/8a,,160,multi_pitch,ouv. P. Barnéoud V. Vilmer. ED+ 7a+ obligatoire. 5 longueurs
+121,22,1,Les vies dansent,5c/5c,,40,multi_pitch,éq. O. Mazet L. Perez. 2 longueurs
+122,22,2,L'est et l'eau,5c,,,sport,éq. L. Perez
+123,22,3,VerraMuse,6a,,,sport,éq. L. Perez
+124,22,4,A cheval sur mon perfo,6b+,,,sport,éq. L. Perez
+125,22,5,Crevaison tardive,6c,,,sport,éq. L. Cussol
+126,22,6,Rasputin,6b,,,sport,éq. L. Perez
+127,22,7,Va vis et deviens,6c/6b+/6a+,34,100,multi_pitch,éq. L. Perez. 3 longueurs
+128,22,8,Travail d'équipe,7a+/7b,,,sport,éq. L. Perez
+129,22,9,Chaleur à mi parcours,5c,,,sport,éq. L. Cussol S. Michaut
+130,23,1,Tom et j'ai ri,6a,,,sport,éq. O. Michelot L. Cussol
+131,23,2,Guerbichaut,7a,14,37,sport,éq. S. Michaut
+132,23,3,Marwage de printemps,6a+,,28,sport,éq. O. Michelot L. Cussol M. Saïdi
+133,23,4,Confort Zone,6c+,,,sport,éq. S. Michaut
+134,23,5,Couche d'eau zone,6c,,,sport,éq. L. Cussol
+135,23,6,La glotte de madame,7b+,,,sport,éq. L. Perez
+136,23,7,Babord,4,,,sport,éq. M. Melahouia
+137,23,8,Tribord,4,,,sport,éq. L. Cussol
+138,23,9,Lilou,5c,,,sport,éq. M. Attia
+139,23,10,I need clous,5b,,,sport,éq. J-F. Gazal
+140,23,11,Mourad der Dritte,5c,,,sport,éq. M. Attia
+141,23,12,Marouen's bi route,6a,,,sport,éq. M. Benrejeb
+142,23,13,Marouen's first route,6a,,,sport,éq. M. Benrejeb
+143,23,14,Sauve qui piaf,6a+,18,38,sport,éq. L. Cussol
+144,23,15,Riton la réjouissance,6a/6a+,24,58,multi_pitch,éq. L. Cussol. 2 longueurs
+145,23,16,Remember the first time,6c/6b+/6c,40,85,multi_pitch,éq. L. Perez. 3 longueurs
+146,23,17,Programme eau Kasserine,5b/6b+,,43,multi_pitch,éq. L. Cussol E. Latour. 2 longueurs
+147,23,18,Ma belle Ekinorev,5c/6c,,38,multi_pitch,éq. L. Cussol E. Latour. 2 longueurs
+148,24,1,La simplicité comme vilain défaut,7b+?,,,sport,éq. L. Perez. Non répétée
+149,24,2,Retour aux sources,8a?,,,sport,éq. L. Perez. Non répétée
+150,25,1,Aali,6a,,,sport,
+151,25,2,Der Frühling kommt wenn man ihm braucht,6b,,,sport,
+152,25,3,Mach so gut wie du kannst,6a+,,,sport,
+153,25,4,Les benjis,7a,,,sport,
+154,25,5,Haya nemchu,6c,,,sport,
+155,25,6,Maxim,6a,,,sport,
+156,25,7,Flappy,5c,,,sport,
+
+157,27,1,Makloub double frite,6c/+,,50,multi_pitch,éq. Laurent Cussol. 3 longueurs: L1 5b L2 5c L3 6c/+. Descente à pied conseillée
+158,27,2,L'aziza en 5,5a+/b,9,17,sport,éq. Vincent / Ahmed Kalfat
+159,26,1,Scolopendre,6a,,,sport,éq. Marianna Berlingozi / Hana Dhia / Iliham Kervarec
+160,26,2,Pluie de spits,6a,,,sport,éq. Marianna Berlingozi / Hana Dhia / Siskia Kervarec
+161,26,3,Crunchy dièdre,6a+/b,,,sport,éq. Ahmed Kalfat / Antoine / lolo
+162,26,4,Highway to harr,7a+,,,multi_pitch,Voie de 4 longueurs. Projet éponyme
+163,28,1,Bizu-bagne,6a+/b,,,sport,éq. Frédéric Badzinski. Encore un beau dièdre en finesse
+164,28,2,Les fées carrioles,6b+,,,multi_pitch,éq. Hélène. 3 longueurs: L1 5c/6a L2 6b L3 6b+. Descente en rappel uniquement. Corde 80m

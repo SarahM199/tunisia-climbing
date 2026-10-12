@@ -1,0 +1,18 @@
+/*
+  index.css - Global reset
+  This just removes default browser margins/padding and sets up
+  the box model so padding doesn't add to element widths.
+  All the real styling lives in App.css.
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* Let App.css handle fonts and colors */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

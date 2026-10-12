@@ -1,0 +1,2225 @@
+/*
+  DM Sans — clean geometric sans-serif.
+  Weights: 400 (normal), 500 (medium), 600 (semibold), 700 (bold)
+*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+ /* 
+  --stone: #F3EFE4;
+  --basalt: #211E1A;
+  --clay: #8A6A4F;
+  --sea: #1B4B4A;
+  --ochre: #B5651D;
+  --line: #DAD3C1;*/
+    /*
+    COLOR PALETTE
+    --rust: primary accent (buttons, CTAs, active states)
+    --tan: muted text, secondary labels
+    --bg: light page background
+    --sand: warm subtle highlights, badge backgrounds
+    --blue: links, informational tags, secondary accent
+    --dark: main text color for headings and body
+    --surface: card backgrounds
+    --line: subtle borders
+  */
+  --rust: #BA3F1D;
+  --tan: #A77E58;
+  --bg: #F5F5F5;
+  --sand: #EEE3AB;
+  --blue: #80A1C1;
+  --dark: #2D2A26;
+  --surface: #FFFFFF;
+  --line: #E0DCD5;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--stone);
+  color: var(--basalt);
+  font-family: 'Inter', sans-serif;
+}
+
+.page {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 64px 24px 96px;
+  animation: fadeInUp 0.3s ease-out; 
+}
+
+.site-header {
+  margin-bottom: 56px;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 32px;
+}
+
+.eyebrow {
+  display: block;
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--sea);
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.site-header h1 {
+  font-family: 'Fraunces', 'serif', Georgia, 'Times New Roman', serif;
+  font-size: 44px;
+  font-weight: 700;
+  margin: 0 0 12px;
+  color: var(--basalt);
+}
+
+.tagline {
+  font-size: 17px;
+  color: var(--clay);
+  margin: 0;
+  max-width: 480px;
+}
+
+.crag-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.crag-card {
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 20px;
+}
+
+.crag-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.crag-card h2 {
+  font-family: 'Fraunces', 'serif', Georgia, 'Times New Roman', serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+  color: var(--basalt);
+}
+.rock-type {
+  font-size: 12px;
+  color: var(--sea);
+  white-space: nowrap;
+}
+
+.region {
+  margin: 8px 0 0;
+  font-size: 14px;
+  color: var(--clay);
+}
+
+.grade-badge {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  background: var(--sand);
+  color: var(--dark);
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+.status-message {
+  font-size: 15px;
+  color: var(--clay);
+}
+
+.status-message.error {
+  color: #B3261E;
+}
+.crag-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 20px;
+  transition: border-color 0.15s ease;
+}
+
+/*
+  Card hover — lifts the card up slightly and adds a shadow.
+  transform: translateY(-3px) moves it 3 pixels up.
+  box-shadow adds a soft drop shadow beneath.
+  transition on .crag-card makes it animate smoothly.
+*/
+.crag-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.crag-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--rust);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 32px;
+  color: var(--sea);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.crag-facts {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.tag {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--sea);
+  border: 1px solid var(--sea);
+  border-radius: 4px;
+  padding: 3px 8px;
+}
+
+.section-title {
+  font-family:'Fraunces',  serif;
+  font-size: 20px;
+  margin: 0 0 20px;
+}
+
+.sector-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sector-row {
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 16px 20px;
+}
+
+.sector-row h3 {
+  margin: 0 0 8px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.sector-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.route-count {
+  font-size: 13px;
+  color: var(--clay);
+}
+
+.forecast-strip {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.day-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 12px 8px;
+  border-radius: 6px;
+  border: 1px solid var(--line);
+  background: white;
+}
+
+.day-name {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--clay);
+}
+
+.day-date {
+  font-size: 11px;
+  color: var(--clay);
+}
+
+.day-temp {
+  font-family:'Fraunces',  serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 4px 0;
+}
+
+.day-badge {
+  font-size: 10px;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 4px;
+  color: white;
+}
+
+.score-excellent .day-badge, .sector-today.score-excellent { background: #3A7D5C; }
+.score-good .day-badge, .sector-today.score-good { background: var(--blue); }
+.score-marginal .day-badge, .sector-today.score-marginal { background: var(--rust); }
+.score-poor .day-badge, .sector-today.score-poor { background: #C0392B; }
+
+.day-card.score-excellent { border-color: #3A7D5C; }
+.day-card.score-good { border-color: var(--blue); }
+.day-card.score-marginal { border-color: var(--rust); }
+.day-card.score-poor { border-color: #C0392B; }
+
+.sector-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.sector-today {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+  padding: 6px 10px;
+  border-radius: 4px;
+  color: white;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.sector-today-label {
+  font-weight: 600;
+}
+
+.sector-shade-note {
+  font-size: 10px;
+  opacity: 0.9;
+}
+.cta-link {
+  display: inline-block;
+  margin-top: 16px;
+  color: var(--sea);
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.cta-link:hover {
+  text-decoration: underline;
+}
+
+.recommend-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: flex-end;
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 32px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-field label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--clay);
+}
+
+.form-field input {
+  font-family: 'Fraunces', 'Inter', sans-serif;
+  font-size: 15px;
+  padding: 8px 10px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: var(--stone);
+  color: var(--basalt);
+}
+
+.form-field input:focus {
+  outline: 2px solid var(--sea);
+  outline-offset: 1px;
+}
+
+.submit-button {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 10px 20px;
+  background: var(--rust);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  opacity: 0.9;
+}
+
+.result-summary {
+  font-size: 14px;
+  color: var(--clay);
+  margin-bottom: 20px;
+}
+
+.result-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.result-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: white;
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--line);
+  border-radius: 6px;
+  padding: 16px 20px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.result-card.score-excellent { border-left-color: #2F6B4F; }
+.result-card.score-good { border-left-color: #4C8C6B; }
+.result-card.score-marginal { border-left-color: var(--ochre); }
+.result-card.score-poor { border-left-color: #B3261E; }
+
+.result-rank {
+  font-family:'Fraunces',  serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--clay);
+  min-width: 32px;
+}
+
+.result-main {
+  flex: 1;
+}
+
+.result-main h3 {
+  margin: 0 0 4px;
+  font-size: 16px;
+}
+
+.result-crag {
+  margin: 0 0 8px;
+  font-size: 13px;
+  color: var(--clay);
+}
+
+.result-reasons {
+  margin: 8px 0 0;
+  padding-left: 16px;
+  font-size: 13px;
+  color: var(--basalt);
+}
+
+.result-reasons li {
+  margin-bottom: 2px;
+}
+
+.result-score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 70px;
+}
+
+.result-score-number {
+  font-family:'Fraunces',  serif;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.result-score-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--clay);
+}
+/*
+  BEST TODAY SECTION
+*/
+.best-today {
+  margin-bottom: 32px;
+}
+
+.best-today-title {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--dark);
+  margin: 0 0 12px;
+}
+
+.best-today-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.best-today-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-decoration: none;
+  color: inherit;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--line);
+  border-radius: 6px;
+  padding: 16px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.best-today-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.best-today-card.score-excellent { border-left-color: #3A7D5C; }
+.best-today-card.score-good { border-left-color: var(--blue); }
+.best-today-card.score-marginal { border-left-color: var(--rust); }
+.best-today-card.score-poor { border-left-color: #C0392B; }
+
+.best-today-card h3 {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.best-today-crag {
+  font-size: 13px;
+  color: var(--tan);
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .best-today-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*
+  Navigation bar — sticks to top of page while scrolling.
+  backdrop-filter gives it that frosted-glass effect so content
+  behind it is slightly blurred.
+*/
+.top-nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(245, 245, 245, 0.9); /* --bg with transparency */
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
+}
+
+.top-nav-inner {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* The "Tunisia Climbing" brand/logo text */
+.nav-brand {
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--basalt);
+  text-decoration: none;
+}
+
+/* Container for the nav links */
+.nav-links {
+  display: flex;
+  gap: 24px;
+}
+
+/* Individual nav links */
+.nav-link {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--clay);
+  text-decoration: none;
+  padding: 4px 0;
+  border-bottom: 2px solid transparent;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+/* Hover and active states */
+.nav-link:hover {
+  color: var(--basalt);
+}
+
+.nav-link.active {
+  color: var(--rust);
+  border-bottom-color: var(--rust);
+}
+
+/*
+  EXPANDABLE SECTORS
+  The sector is now a card with a clickable header (button)
+  and a collapsible body showing routes.
+*/
+
+.sector-card {
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  overflow: hidden;
+  transition: border-color 0.15s ease;
+}
+
+.sector-card:hover {
+  border-color: var(--sea);
+}
+
+.sector-card--expanded {
+  border-color: var(--sea);
+}
+
+/* Make the sector row a proper button (reset default button styles) */
+.sector-row {
+  width: 100%;
+  background: white;
+  border: none;
+  padding: 16px 20px;
+  cursor: pointer;
+  text-align: left;
+  font-family: inherit;
+  font-size: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.sector-row:hover {
+  background: #faf9f5;
+}
+
+/* The little arrow that rotates when you expand */
+.sector-arrow {
+  display: inline-block;
+  font-size: 11px;
+  margin-right: 8px;
+  transition: transform 0.2s ease;
+  color: var(--clay);
+}
+
+.sector-arrow--open {
+  transform: rotate(90deg);
+}
+
+/* The routes panel that slides in below the header */
+.sector-routes {
+  padding: 16px 20px;
+  background: var(--stone);
+  border-top: 1px solid var(--line);
+}
+
+/* Small hint text above the sector list */
+.sector-hint {
+  font-size: 13px;
+  color: var(--clay);
+  margin-bottom: 16px;
+}
+
+/*
+  ROUTE TABLE
+  A clean, minimal table showing route details.
+*/
+.route-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.route-table th {
+  text-align: left;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--clay);
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--line);
+}
+
+.route-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--line);
+}
+
+.route-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* Subtle hover on table rows */
+.route-table tbody tr:hover {
+  background: rgba(26, 75, 74, 0.03);
+}
+
+.route-number {
+  color: var(--clay);
+  font-weight: 600;
+  width: 32px;
+}
+
+.route-name {
+  font-weight: 500;
+}
+
+.route-type {
+  color: var(--clay);
+  font-size: 13px;
+}
+
+/*
+  FILTER BAR
+  A horizontal strip of inputs/selects for filtering content.
+  Wraps on mobile thanks to flex-wrap.
+*/
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: flex-end;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin-bottom: 16px;
+}
+
+/* Style the select dropdowns to match the text inputs */
+.form-field select {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  padding: 8px 10px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: var(--bg);
+  color: var(--dark);
+  cursor: pointer;
+}
+
+.form-field select:focus {
+  outline: 2px solid var(--blue);
+  outline-offset: 1px;
+}
+
+/* Results count text below the filter bar */
+.filter-count {
+  font-size: 13px;
+  color: var(--tan);
+  margin-bottom: 16px;
+}
+
+/* Full-page route table — wider and with links */
+.route-table--full {
+  font-size: 14px;
+}
+
+.route-table--full .route-name a {
+  color: var(--dark);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.route-table--full .route-name a:hover {
+  color: var(--rust);
+  text-decoration: underline;
+}
+
+.table-link {
+  color: var(--blue);
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.table-link:hover {
+  text-decoration: underline;
+}
+
+/*
+  RESPONSIVE DESIGN
+  These @media queries adjust the layout for smaller screens.
+  The breakpoints:
+  - 768px = tablets and small laptops
+  - 480px = phones
+*/
+
+@media (max-width: 768px) {
+  .page {
+    padding: 32px 16px 64px;
+  }
+
+  .site-header h1 {
+    font-size: 32px;
+  }
+
+  /* Forecast: make it scrollable horizontally instead of squishing */
+  .forecast-strip {
+    grid-template-columns: repeat(7, 120px);
+    overflow-x: auto;
+    padding-bottom: 8px;
+  }
+
+  /* Stack the recommend form vertically */
+  .recommend-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .submit-button {
+    width: 100%;
+  }
+
+  /* Result cards: stack the content vertically */
+  .result-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .result-rank {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .site-header h1 {
+    font-size: 26px;
+  }
+
+  .crag-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .top-nav-inner {
+    padding: 10px 16px;
+  }
+
+  /* Brand link now uses flexbox to put the icon and text side by side */
+  .nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--basalt);
+    text-decoration: none;
+  }
+
+  .nav-links {
+    gap: 16px;
+  }
+}
+
+/*
+  HERO SECTION
+  Full-width banner with a background photo.
+
+  How it works:
+  - The photo covers the entire section (background-size: cover)
+  - A dark gradient overlay sits on top so text is always readable
+  - The text is white and centered
+  - Negative margin pulls it under the sticky nav slightly for overlap
+*/
+.hero {
+  width: 100%;
+  min-height: 320px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+
+
+/* Dark gradient — goes from transparent at top to dark at bottom */
+.hero-overlay {
+  width: 100%;
+  padding: 80px 24px 40px;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
+}
+
+.hero-eyebrow {
+  display: block;
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.hero-title {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 44px;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin: 0 0 12px;
+}
+
+.hero-subtitle {
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.85);
+  margin: 0;
+  max-width: 480px;
+}
+
+
+/* On mobile, make the hero smaller */
+@media (max-width: 768px) {
+  .hero {
+    min-height: 240px;
+  }
+  .hero-title {
+    font-size: 32px;
+  }
+  .hero-overlay {
+    padding: 60px 16px 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    min-height: 200px;
+  }
+  .hero-title {
+    font-size: 26px;
+  }
+}
+
+/*
+  FOOTER. Just provides closure.
+*/
+.site-footer {
+  border-top: 1px solid var(--line);
+  padding: 32px 24px;
+  margin-top: 64px;
+}
+
+.footer-inner {
+  max-width: 880px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-brand {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--dark);
+  margin: 0 0 4px;
+}
+
+.footer-note {
+  font-size: 13px;
+  color: var(--tan);
+  margin: 0;
+}
+/*
+  FADE-IN ANIMATION
+  Elements with class "fade-in" will gently appear when they render.
+
+  @keyframes defines the animation steps:
+  - starts invisible and 10px lower
+  - ends fully visible at normal position
+
+  The .page class applies it so every page transition fades in.
+*/
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Also animate the hero on the home page */
+.hero {
+  animation: fadeInUp 0.4s ease-out;
+}
+
+/*
+  STATS BAR
+  Three numbers in a row showing total counts.
+  Gives users a sense of how much data is available.
+*/
+.stats-bar {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 24px;
+  margin-bottom: 32px;
+  border-bottom: 1px solid var(--line);
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.stat-number {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--dark);
+}
+
+.stat-label {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--tan);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+@media (max-width: 480px) {
+  .stats-bar {
+    gap: 24px;
+  }
+  .stat-number {
+    font-size: 22px;
+  }
+}
+
+/*
+  LOADING SKELETONS
+  Pulsing gray shapes that show where content will appear.
+
+  @keyframes shimmer: gently pulses the opacity so it looks alive.
+  Used instead of "Loading..." text for a smoother experience.
+*/
+@keyframes shimmer {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 0.7; }
+}
+
+.skeleton {
+  background: var(--line);
+  animation: shimmer 1.5s ease-in-out infinite;
+}
+
+.skeleton-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+/*
+  MAP VIEW
+  The container needs a fixed height, otherwise the map collapses to 0px.
+  border-radius gives it rounded corners to match the rest of the design.
+*/
+.map-container {
+  height: 500px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+}
+
+.map-popup {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+}
+
+.map-popup p {
+  margin: 4px 0;
+  color: var(--tan);
+  font-size: 13px;
+}
+
+.map-popup-link {
+  display: inline-block;
+  margin-top: 8px;
+  background: none;
+  border: none;
+  color: var(--rust);
+  font-weight: 600;
+  font-size: 13px;
+  cursor: pointer;
+  padding: 0;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.map-popup-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .map-container {
+    height: 350px;
+  }
+}
+
+/*
+  GRADE/SECTOR BAR CHART
+  Horizontal bars showing relative size of each sector.
+  Pure CSS — no chart library.
+*/
+.grade-chart {
+  margin-bottom: 32px;
+}
+
+.grade-bar-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.grade-bar-label {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--dark);
+  min-width: 120px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.grade-bar-track {
+  flex: 1;
+  height: 20px;
+  background: var(--line);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.grade-bar-fill {
+  height: 100%;
+  background: var(--rust);
+  border-radius: 4px;
+  transition: width 0.5s ease;
+  min-width: 4px;
+}
+
+.grade-bar-count {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--tan);
+  min-width: 24px;
+  text-align: right;
+}
+/*
+  HAMBURGER MENU
+  Hidden on desktop, visible on mobile.
+  Three lines that can animate to an X shape when open.
+*/
+.hamburger {
+  display: none; /* Hidden on desktop */
+  flex-direction: column;
+  gap: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.hamburger-line {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--dark);
+  border-radius: 2px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+/* Animate lines into X when open */
+.hamburger-line.open:nth-child(1) {
+  transform: translateY(6px) rotate(45deg);
+}
+.hamburger-line.open:nth-child(2) {
+  opacity: 0;
+}
+.hamburger-line.open:nth-child(3) {
+  transform: translateY(-6px) rotate(-45deg);
+}
+
+/* MOBILE: show hamburger, hide horizontal nav */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    /* Hidden by default on mobile */
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--bg);
+    border-bottom: 1px solid var(--line);
+    flex-direction: column;
+    padding: 16px 24px;
+    gap: 12px;
+  }
+
+  /* Show when menu is open */
+  .nav-links--open {
+    display: flex;
+  }
+
+  /* Make the nav container relative so the dropdown positions correctly */
+  .top-nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .top-nav-inner {
+    position: relative;
+  }
+}
+/*
+  SECTOR MARKERS on the map — small orange circles.
+  These use Leaflet's DivIcon so we style them with CSS.
+*/
+.sector-marker {
+  background: var(--rust);
+  border: 2px solid white;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Map controls bar (toggle checkboxes above the map) */
+.map-controls {
+  margin-bottom: 12px;
+}
+
+.map-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--dark);
+  cursor: pointer;
+}
+
+.map-toggle input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--rust);
+}
+
+/*
+  RECOMMENDER — improved styling
+*/
+
+/* Empty state (before searching or during loading) */
+.recommend-empty {
+  text-align: center;
+  padding: 48px 24px;
+  border: 1px dashed var(--line);
+  border-radius: 8px;
+  margin-top: 16px;
+}
+
+.recommend-empty-icon {
+  font-size: 48px;
+  margin-bottom: 12px;
+}
+
+.recommend-empty-text {
+  font-size: 15px;
+  color: var(--tan);
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+/* Summary bar between form and results */
+.result-summary-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 12px 16px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  font-size: 13px;
+  color: var(--tan);
+  margin-bottom: 20px;
+}
+
+.result-summary-bar strong {
+  color: var(--dark);
+}
+
+/* Tags row in result card */
+.result-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.tag--warning {
+  border-color: var(--rust);
+  color: var(--rust);
+}
+
+/* Reason badges — compact, inline */
+.result-reason-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.reason-badge {
+  font-size: 11px;
+  padding: 2px 8px;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  color: var(--tan);
+}
+
+/*
+  CONDITION BADGE — colored pill showing weather/conditions quality.
+  Replaces the old circle. More compact and readable.
+*/
+.condition-badge {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 20px;
+  white-space: nowrap;
+  color: white;
+  flex-shrink: 0;
+}
+
+.condition-badge.score-excellent { background: #3A7D5C; }
+.condition-badge.score-good { background: var(--blue); }
+.condition-badge.score-marginal { background: var(--rust); }
+.condition-badge.score-poor { background: #C0392B; }
+
+
+.score-circle-number {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--dark);
+  line-height: 1;
+}
+
+.score-circle-label {
+  font-size: 9px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--tan);
+}
+
+@media (max-width: 768px) {
+  .result-summary-bar {
+    flex-direction: column;
+    gap: 4px;
+  }
+}
+/*
+  BREADCRUMB — navigation trail (Crags > Zaghouan > Sector Name)
+*/
+.breadcrumb {
+  font-size: 13px;
+  margin-bottom: 24px;
+  color: var(--tan);
+}
+
+.breadcrumb a {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb-sep {
+  margin: 0 8px;
+  color: var(--line);
+}
+
+/*
+  SECTOR PHOTOS — placeholder section for future image uploads.
+*/
+.sector-photos {
+  margin-bottom: 32px;
+}
+
+.photo-placeholder {
+  border: 2px dashed var(--line);
+  border-radius: 8px;
+  padding: 40px;
+  text-align: center;
+  color: var(--tan);
+  font-size: 14px;
+}
+
+.photo-placeholder p:first-child {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+/*
+  COMMUNITY — placeholder for future comments/ratings.
+*/
+.community-placeholder {
+  border: 1px dashed var(--line);
+  border-radius: 8px;
+  padding: 32px;
+  text-align: center;
+  color: var(--tan);
+  font-size: 15px;
+}
+
+.community-placeholder-sub {
+  font-size: 13px;
+  margin-top: 8px;
+  color: var(--tan);
+  opacity: 0.7;
+}
+
+/*
+  PHOTO GALLERY + LIGHTBOX
+  Horizontal scrollable strip of thumbnails.
+  Click any photo to see it full-screen in a dark overlay.
+*/
+.photo-gallery {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+  margin-bottom: 24px;
+  justify-content: center;
+}
+
+.gallery-photo {
+  height: 150px;
+  border-radius: 6px;
+  object-fit: cover;
+  flex-shrink: 0;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.gallery-photo:hover {
+  opacity: 0.85;
+}
+
+/* Lightbox overlay — fullscreen dark background */
+.lightbox-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* The enlarged image inside the lightbox */
+.lightbox-image {
+  max-width: 90vw;
+  max-height: 85vh;
+  object-fit: contain;
+  border-radius: 4px;
+  cursor: default;
+}
+
+/* Close button (X) in the top-right corner */
+.lightbox-close {
+  position: absolute;
+  top: 16px;
+  right: 24px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+  padding: 8px;
+  line-height: 1;
+}
+
+.lightbox-close:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+  .gallery-photo {
+    height: 110px;
+  }
+}
+
+/*
+  AUTH FORMS (login / register)
+*/
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 380px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 24px;
+}
+
+.auth-form .form-field input {
+  width: 100%;
+}
+
+.field-hint {
+  font-size: 12px;
+  color: var(--tan);
+}
+
+.auth-switch {
+  font-size: 13px;
+  color: var(--tan);
+  margin: 0;
+}
+
+.auth-switch a {
+  color: var(--rust);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.auth-switch a:hover {
+  text-decoration: underline;
+}
+
+/*
+  NAV auth area — display name + log out button
+*/
+.nav-user {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--basalt);
+  text-decoration: none;
+
+}
+
+.nav-logout {
+  background: none;
+  border: none;
+  font-family: 'DM Sans', sans-serif;
+  cursor: pointer;
+}
+
+/*
+  STAR RATINGS
+  Interactive version renders <button>, read-only renders <span>.
+*/
+.stars {
+  display: inline-flex;
+  gap: 2px;
+}
+
+.star {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 18px;
+  line-height: 1;
+  color: var(--line);
+  cursor: pointer;
+  transition: color 0.15s ease;
+}
+
+.stars--readonly .star {
+  cursor: default;
+  font-size: 14px;
+}
+
+.star--on {
+  color: #E8B84B;
+}
+
+/*
+  Average rating summary bar above the comment form
+*/
+.rating-summary {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.rating-summary-value {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--dark);
+}
+
+.rating-summary-count {
+  font-size: 13px;
+  color: var(--tan);
+}
+
+/*
+  COMMENT FORM
+*/
+.comment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 24px;
+}
+
+.comment-form textarea {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: var(--bg);
+  color: var(--dark);
+  resize: vertical;
+  width: 100%;
+}
+
+.comment-form textarea:focus {
+  outline: 2px solid var(--blue);
+  outline-offset: 1px;
+}
+
+.comment-form-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.text-button {
+  background: none;
+  border: none;
+  color: var(--tan);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.text-button:hover {
+  color: #C0392B;
+  text-decoration: underline;
+}
+
+/*
+  COMMENT LIST
+*/
+.comment-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.comment {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 14px 16px;
+}
+
+.comment-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 6px;
+}
+
+.comment-author {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--dark);
+}
+
+.comment-date {
+  font-size: 12px;
+  color: var(--tan);
+  margin-left: auto;
+}
+
+.comment-body {
+  font-size: 14px;
+  color: var(--dark);
+  margin: 0;
+  white-space: pre-wrap;
+}
+/*
+  YOUR RATING widget — separate from the comment form now
+*/
+.rating-block {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-bottom: 20px;
+}
+
+.rating-block-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--dark);
+}
+
+.rating-block-hint {
+  font-size: 12px;
+  color: var(--tan);
+}
+
+.star:disabled {
+  cursor: wait;
+  opacity: 0.6;
+}
+
+/*
+  Per-comment edit / delete controls
+*/
+.comment-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 8px;
+}
+
+.comment-edited {
+  font-style: italic;
+  opacity: 0.8;
+}
+
+/*
+  Inline edit mode
+*/
+.comment-edit textarea {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: var(--bg);
+  color: var(--dark);
+  resize: vertical;
+  width: 100%;
+}
+
+.comment-edit textarea:focus {
+  outline: 2px solid var(--blue);
+  outline-offset: 1px;
+}
+
+.submit-button--small {
+  font-size: 13px;
+  padding: 6px 14px;
+}
+
+/*
+  PHOTO PICKER in the comment form
+*/
+.photo-input {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+  color: var(--dark);
+}
+
+.photo-input::file-selector-button {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 6px 12px;
+  margin-right: 10px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: var(--bg);
+  color: var(--dark);
+  cursor: pointer;
+}
+
+.photo-input::file-selector-button:hover {
+  border-color: var(--rust);
+  color: var(--rust);
+}
+
+/* Previews of files queued but not yet uploaded */
+.photo-preview-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.photo-preview-wrap,
+.comment-photo-wrap {
+  position: relative;
+  display: inline-block;
+}
+
+.photo-preview {
+  height: 72px;
+  width: 72px;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 1px solid var(--line);
+  display: block;
+}
+
+/* Small ✕ overlay for removing a queued file or deleting a stored photo */
+.photo-remove {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: none;
+  background: var(--dark);
+  color: white;
+  font-size: 11px;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.photo-remove:hover {
+  background: #C0392B;
+}
+
+/*
+  Photos attached to a posted comment
+*/
+.comment-photo-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.comment-photo {
+  height: 96px;
+  border-radius: 4px;
+  object-fit: cover;
+  cursor: pointer;
+  display: block;
+  transition: opacity 0.15s ease;
+}
+
+.comment-photo:hover {
+  opacity: 0.85;
+}
+
+@media (max-width: 480px) {
+  .comment-photo {
+    height: 76px;
+  }
+}
+/*
+  INLINE RATING — compact stars for lists, cards and popups.
+  Smaller than the ones in the Community section so they sit
+  comfortably next to tags and badges.
+*/
+.rating-inline {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.rating-inline .star {
+  font-size: 12px;
+}
+
+.rating-inline-value {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--dark);
+  margin-left: 3px;
+}
+
+.rating-inline-count {
+  font-size: 11px;
+  color: var(--tan);
+}
+/*
+  ABOUT teaser on the home page
+*/
+.about {
+  margin-top: 56px;
+  padding-top: 40px;
+  border-top: 1px solid var(--line);
+}
+
+.about-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--dark);
+  margin: 0 0 20px;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.about-col p {
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--dark);
+  margin: 0 0 12px;
+}
+
+.about-stat-line {
+  font-size: 13px;
+  color: var(--tan);
+  margin-top: 16px;
+}
+
+.about-sources {
+  font-size: 12px;
+  color: var(--tan);
+  line-height: 1.6;
+  margin: 0 0 8px;
+}
+
+.about-sources a {
+  color: var(--tan);
+}
+
+/*
+  GUIDE page
+*/
+.guide-section {
+  margin-bottom: 40px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid var(--line);
+}
+
+.guide-section--sources {
+  border-bottom: none;
+}
+
+.guide-heading {
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--dark);
+  margin: 0 0 14px;
+}
+
+.guide p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--dark);
+  margin: 0 0 14px;
+}
+
+.guide a {
+  color: var(--rust);
+}
+
+.guide-list {
+  margin: 0 0 14px;
+  padding-left: 20px;
+}
+
+.guide-list li {
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 8px;
+}
+
+/* Two-up cards for crag areas and clubs */
+.guide-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.guide-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.guide-card h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 0 4px;
+}
+
+.guide-card-meta {
+  font-size: 12px;
+  color: var(--tan);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0 0 10px;
+}
+
+.guide-card p {
+  font-size: 14px;
+}
+
+/* Callout box — used for the heat warning and the visitor note */
+.guide-callout {
+  border-left: 4px solid var(--line);
+  background: var(--surface);
+  border-radius: 6px;
+  padding: 16px 20px;
+  margin: 0 0 16px;
+}
+
+.guide-callout p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.guide-callout--warning {
+  border-left-color: #C0392B;
+}
+
+/*
+  TIMELINE
+*/
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.timeline-item {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.timeline-year {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--rust);
+  min-width: 56px;
+  padding-top: 2px;
+}
+
+.timeline-text {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--dark);
+}
+
+/*
+  FOOTER community links
+*/
+.footer-links {
+  font-size: 13px;
+  margin: 0 0 6px;
+}
+
+.footer-links a {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-sep {
+  color: var(--line);
+  margin: 0 8px;
+}
+
+@media (max-width: 768px) {
+  .about-grid,
+  .guide-cards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+/*
+  CONTACT page
+*/
+.contact-form {
+  max-width: 560px;
+  gap: 20px;
+  padding: 28px;
+}
+
+.contact-form textarea {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--bg);
+  color: var(--dark);
+  resize: vertical;
+  width: 100%;
+  min-height: 140px;
+}
+
+.contact-form textarea::placeholder {
+  color: var(--tan);
+  opacity: 0.8;
+}
+
+.contact-form textarea:focus,
+.contact-form select:focus,
+.contact-form input:focus {
+  outline: 2px solid var(--blue);
+  outline-offset: 1px;
+}
+
+.contact-form select,
+.contact-form input[type="text"],
+.contact-form input[type="email"] {
+  width: 100%;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--bg);
+  color: var(--dark);
+}
+
+.contact-form select {
+  cursor: pointer;
+}
+
+.contact-form label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--dark);
+  margin-bottom: 2px;
+}
+
+/* Character counter sits right-aligned under the textarea */
+.contact-form .form-field .field-hint {
+  align-self: flex-end;
+  font-variant-numeric: tabular-nums;
+}
+
+.contact-form .submit-button {
+  align-self: flex-start;
+  padding: 11px 24px;
+}
+
+/*
+  HONEYPOT — must be invisible to humans.
+
+  Deliberately NOT display:none, because some bots skip hidden inputs and
+  we want them to find and fill this. Positioning it off-screen keeps it
+  technically present but unreachable.
+
+  If this rule is missing, real users see a "Website" box, fill it in, and
+  their genuine messages get thrown away by the backend.
+*/
+.honeypot {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/*
+  "Suggest a correction" line at the bottom of a sector page
+*/
+.sector-feedback {
+  font-size: 13px;
+  color: var(--tan);
+  margin-top: 32px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+}
+
+.sector-feedback a {
+  color: var(--rust);
+  font-weight: 500;
+}
+
+@media (max-width: 560px) {
+  .contact-form {
+    padding: 20px;
+  }
+}
