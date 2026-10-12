@@ -8,12 +8,13 @@ from app.api.recommend import router as recommend_router
 from app.api.auth import router as auth_router
 from app.api.comments import router as comments_router
 from app.api.contact import router as contact_router
+from app.core.config import settings
 
 app = FastAPI(title="Tunisia Climbing API")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],
+    allow_origins=[o.strip() for o in settings.cors_origins.split(",")],
     allow_methods=["*"],
     allow_headers=["*"],
 )

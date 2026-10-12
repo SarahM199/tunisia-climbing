@@ -16,4 +16,7 @@ class Settings(BaseSettings):
     supabase_service_key: str
     supabase_bucket: str = "comment-photos"     
 
+    # Comma-separated list of frontend URLs allowed to call the API
+    cors_origins: str = "http://localhost:5173"
+
 settings = Settings()  # do it now, store the result here
